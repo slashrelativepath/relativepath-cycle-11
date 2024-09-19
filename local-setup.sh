@@ -6,4 +6,3 @@ else
   echo 'installing nano'
    brew install nano  
 fi
-
