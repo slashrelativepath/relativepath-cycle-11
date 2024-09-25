@@ -4,5 +4,5 @@ then
   echo 'nano already installed'
 else 
   echo 'installing nano' 
-  sudo apt install -y nano
+  brew install nano
 fi
