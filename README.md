@@ -5,4 +5,4 @@ The repository for Cycle 11 code and configurations.
 Run the file 'windows-setup.ps1' to install nano and git (with unix tools) using the command below in powershell.
 Be sure to run powershell as administrator.
 
-```Set-ExecutionPolicy Bypass -Scope Process -Force; ./setup-windows.ps1``` 
+```Set-ExecutionPolicy Bypass -Scope Process -Force; ./windows-setup.ps1``` 
