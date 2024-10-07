@@ -15,3 +15,18 @@ Run the file that will automatically detect if you are darwin or linux.
 
 `$SHELL setup-$(uname).sh`
 
+## Project
+
+To fully automate a production level web server.
+
+### Requirements
+
+* Ubuntu24.04 Virtual Machine
+* NGINX Webserver
+
+### Usage
+
+From the root of the repo to create webserver run:
+
+`$SHELL create-webserver.sh`
+
