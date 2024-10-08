@@ -1,6 +1,10 @@
 # Powershell onboarding script.   
 # This script will install nano and git if they are not already installed.
 
+
+# if choco installed
+# then do nothing
+# else install choco
 # if nano installed
 # then do nothing
 # else install nano
@@ -8,6 +12,12 @@
 # do nothing
 # else install git
 
+if (choco --version) {
+  echo "chocolatey already installed"
+} else {
+  echo "installing chocolatey"
+  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+}
 
 if (get-command nano) {
   echo "nano already installed"
