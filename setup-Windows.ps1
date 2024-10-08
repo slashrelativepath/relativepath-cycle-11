@@ -1,16 +1,5 @@
 # Powershell onboarding script.   
-# This script will install nano and git if they are not already installed.
-
-
-# if choco installed
-# then do nothing
-# else install choco
-# if nano installed
-# then do nothing
-# else install nano
-# if git installed
-# do nothing
-# else install git
+# This script will install chocolatey, nano, git, and multipass if they are not already installed.
 
 if (choco --version) {
   echo "chocolatey already installed"
