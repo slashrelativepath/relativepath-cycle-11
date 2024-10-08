@@ -11,18 +11,22 @@
 
 if (get-command nano) {
   echo "nano already installed"
-}
-else {
+} else {
   echo "installing nano"
   choco install nano
 }
 
 if (get-command git) {
   echo "git already installed"
-}
-else {
+} else {
   echo "installing git"
-  choco install git.install -y --force --params "'GitAndUnixToolsOnPath /WindowsTerminal
- /NoAutoCrlf'"
+  choco install git.install -y --force --params "'GitAndUnixToolsOnPath /WindowsTerminal /NoAutoCrlf'"
 }
 
+if (multipass --version) {
+  echo "multipass already installed"
+} else {
+  echo "installing multipass"
+  choco install -y virtualbox
+  choco install -y multipass --params="'/HyperVisor:VirtualBox'"
+}
