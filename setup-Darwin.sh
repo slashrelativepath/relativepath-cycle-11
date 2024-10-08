@@ -15,4 +15,12 @@ else
   echo 'installing git'
   brew install git 
 fi
-  
+
+# Multipass should be installed
+if (multipass version)
+then
+  echo 'multipass already installed'
+else
+  echo 'installing multipass'
+  brew install multipass
+fi  
