@@ -30,3 +30,6 @@ From the root of the repo to create webserver run:
 
 `$SHELL create-webserver.sh`
 
+To delete:
+
+`$SHELL delete-webserver.sh`
