@@ -7,6 +7,15 @@ else
   sudo true; NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# ==> Next steps:
+# - Run these commands in your terminal to add Homebrew to your PATH:
+#    echo >> /Users/ahavamorse/.zprofile
+#    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ahavamorse/.zprofile
+#    eval "$(/opt/homebrew/bin/brew shellenv)"
+# - Run brew help to get started
+# - Further documentation:
+#    https://docs.brew.sh
+
 # nano should be installed
 if (which nano)
 then 
