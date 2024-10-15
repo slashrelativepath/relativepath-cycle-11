@@ -19,6 +19,12 @@ Run the file that will automatically detect if you are darwin or linux.
 
 To fully automate a production level web server.
 
+### Acceptance criteria
+
+It should be true that you can request a web page from the web server.
+
+`curl http://$(multipass info webserver | grep IPv4 | awk '{print $2}'):80`
+
 ### Requirements
 
 * Ubuntu24.04 Virtual Machine
