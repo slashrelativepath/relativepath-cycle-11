@@ -19,6 +19,13 @@ Run the file that will automatically detect if you are darwin or linux.
 
 To fully automate a production level web server.
 
+### DEMO
+
+`$SHELL create-vm.sh && multipass transfer install-webserver.sh webserver: 
+&& multipass exec webserver -- bash install-webserver.sh && curl 
+http://$(multipass info webserver | grep IPv4 | awk '{print $2}'):80 && 
+echo $?`
+
 ### Acceptance criteria
 
 It should be true that you can request a web page from the web server.
